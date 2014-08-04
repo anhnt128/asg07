@@ -105,10 +105,12 @@ public class MyList implements Item {
 		l2.append(new NumeralItem(5));
 		System.out.println(l2); // (a, b, 5)
 		
-		MyList newList = (MyList)l.clone();
-		System.out.println(newList); // (1, 2, (a, b), a, b)
-		System.out.println(newList.length() + " lll " + l2.length()); 
-		System.out.println(newList.equals(l2));
+		MyList l3= new MyList();
+		l3.append(new StringItem("a")); 
+		l3.append(new StringItem("b"));
+		l3.append(new StringItem("4"));
+		System.out.println(l3.length() + " lll " + l2.length()); 
+		System.out.println(l3.equals(l2));
 		
 		System.out.println(l); // (1, 2, (a, b), a, b)
 		l.invert();
