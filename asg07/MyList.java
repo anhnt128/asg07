@@ -109,6 +109,7 @@ public class MyList implements Item {
 		l3.append(new StringItem("a")); 
 		l3.append(new StringItem("b"));
 		l3.append(new StringItem("4"));
+		System.out.println(l3);
 		System.out.println(l3.length() + " lll " + l2.length()); 
 		System.out.println(l3.equals(l2));
 		
